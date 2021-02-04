@@ -36,9 +36,9 @@ def lrGradientDescent(alpha, itr):
     plt.subplot(2, 1, 1)
     plt.scatter(x, y, marker='x', color='b', label="real value")
     plt.scatter(x, y_hat, marker='o', color="g", label="predicted value")
-    plt.title("Linear Regression with Gradient Descent"), plt.xlabel("X coordinate"), plt.ylabel("Y coordinate"), plt.legend(loc=4)
+    plt.title("Linear Regression with Gradient Descent"), plt.legend(loc=4)
     plt.text(0, 25, "Y = {} + {}X".format(b0, b1))
-    plt.text(0, 24, "r2 = {}".format(r2))
+    plt.text(0, 23, "r2 = {}".format(r2))
     plt.subplot(2, 1, 2)
     plt.scatter(range(len(r2_itr)), r2_itr, marker="o", color='r', s=0.5)
     plt.xlabel("iterations"), plt.ylabel('r-squared')
@@ -48,4 +48,4 @@ def lrGradientDescent(alpha, itr):
 
 
 if __name__ == "__main__":
-    lrGradientDescent(0.01, 1000)
+    lrGradientDescent(0.01, 10000)

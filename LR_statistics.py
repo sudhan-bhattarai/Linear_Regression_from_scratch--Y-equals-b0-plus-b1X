@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 
 def lr():
-    '''load data'''
-    df = pd.DataFrame(pd.read_csv('data.csv'))
-    x, y = df.X.values, df.Y.values
+
+    df = pd.DataFrame(pd.read_csv('data.csv'))  # load data
+    x, y = df.X.values, df.Y.values  # output and input
 
     '''calculate average'''
     x_avg, y_avg = np.average(x), np.average(y)
